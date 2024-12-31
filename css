@@ -1,37 +1,136 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+    box-sizing: border-box;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
-    padding: 1rem;
-    width: 100%;
-    text-align: center;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-main {
-    padding: 2rem;
-    text-align: center;
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-button {
-    padding: 0.5rem 1rem;
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.hero-section {
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-section button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
     background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section button:hover {
+    background-color: #45a049;
+}
+
+.content-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 2rem;
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #4CAF50;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
     font-size: 1rem;
 }
 
-button:hover {
-    background-color: #45a049;
+.card:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
