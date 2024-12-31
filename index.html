@@ -1,19 +1,61 @@
 <!DOCTYPE html>
-<html lang="ch">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Website</title>
+    <title>Elegant Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>匿名薇閣</h1>
+        <nav>
+            <div class="logo">MyElegantSite</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <p>你媽妳媽妳媽.</p>
-        <button id="alertButton">按鈕</button>
-    </main>
+    <section id="home" class="hero-section">
+        <h1>你媽妳媽</h1>
+        <p>We create beautiful and functional websites.</p>
+        <button id="learnMoreBtn">Learn More</button>
+    </section>
+    <section id="about" class="content-section">
+        <h2>About Us</h2>
+        <p>We are a team of passionate designers and developers dedicated to creating stunning websites.</p>
+    </section>
+    <section id="services" class="content-section">
+        <h2>Our Services</h2>
+        <div class="card-container">
+            <div class="card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Design</h3>
+                <p>Creative and modern designs tailored to your needs.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-code"></i>
+                <h3>Development</h3>
+                <p>High-quality development with the latest technologies.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive</h3>
+                <p>Websites that look great on all devices.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="content-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+        <button id="contactBtn">Get in Touch</button>
+    </section>
+    <footer>
+        <p>&copy; 2024 MyElegantSite. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
